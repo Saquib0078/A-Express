@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"
+            android:checked="true"
+            android:color="@color/colorAccent"/>
+
+        <item
+            android:id="@+id/order"
+            android:icon="@drawable/ic_baseline_arrow_circle_up_24"
+            android:title="order"
+            android:color="@color/colorAccent"/>
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"
+        android:title="cart"
+        android:checked="true"
+        android:color="@color/colorAccent"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="profile"
+        android:color="@color/colorAccent"/>
+    </menu>
