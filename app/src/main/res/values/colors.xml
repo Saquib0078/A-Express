@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimaryRipple">#B3E3EE</color>
-    <color name="colorAccentRipple">#B3E3EE</color>
     <color name="backgroundColor">#E8E8E8</color>
-    <color name="secondaryText">#616161</color>
-    <color name="primaryText">#212121</color>
-    <color name="appBg">#F6F8FB</color>
-    <color name="new_meeting">#673AB7</color>  <!--ff5722-->
-    <color name="white">#ffffff</color>
-    <color name="black">#1E1E1E</color>
-    <color name="delete">#f75254</color>
-    <color name="error">#e57373</color>
-    <color name="divider">#e6e6e6</color>
-    <color name="hint">#AFAFAF</color>
-    <color name="orange">#FF5722</color>
-    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/divider</color>
 
+    <color name="orange">#FF5722</color>
 </resources>

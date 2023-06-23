@@ -1,6 +1,5 @@
 package com.example.aexpress.adapters;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
@@ -9,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -56,16 +56,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
                 .into(holder.binding.image);
 
         holder.binding.name.setText(product.getName());
-        holder.binding.price.setText("INR " + product.getPrice());
+        holder.binding.price.setText("PKR " + product.getPrice());
         holder.binding.quantity.setText(product.getQuantity() + " item(s)");
-      holder.binding.image.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-              products.remove(position);
-              notifyDataSetChanged();
 
-          }
-      });
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

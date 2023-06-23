@@ -231,7 +231,7 @@ INSERT INTO `currency` (`id`, `code`, `name`, `paypal`, `razorpay`) VALUES
 (107, 'KPW', 'North Korean won', 0, 0),
 (108, 'NOK', 'Norwegian krone', 1, 1),
 (109, 'OMR', 'Omani rial', 0, 0),
-(110, 'INR', 'Pakistani rupee', 0, 1),
+(110, 'PKR', 'Pakistani rupee', 0, 1),
 (111, 'XPD', 'Palladium (ounce)', 0, 0),
 (112, 'PAB', 'Panamanian balboa', 0, 0),
 (113, 'PGK', 'Papua New Guinea kina', 0, 1),

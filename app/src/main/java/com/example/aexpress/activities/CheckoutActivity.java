@@ -45,7 +45,7 @@ public class CheckoutActivity extends AppCompatActivity {
     CartAdapter adapter;
     ArrayList<Product> products;
     double totalPrice = 0;
-    final int tax = 18;
+    final int tax = 11;
     ProgressDialog progressDialog;
     Cart cart;
 
@@ -75,7 +75,7 @@ public class CheckoutActivity extends AppCompatActivity {
         adapter = new CartAdapter(this, products, new CartAdapter.CartListener() {
             @Override
             public void onQuantityChanged() {
-                binding.subtotal.setText(String.format("INR %.2f",cart.getTotalPrice()));
+                binding.subtotal.setText(String.format("PKR %.2f",cart.getTotalPrice()));
             }
         });
 
@@ -85,10 +85,10 @@ public class CheckoutActivity extends AppCompatActivity {
         binding.cartList.addItemDecoration(itemDecoration);
         binding.cartList.setAdapter(adapter);
 
-        binding.subtotal.setText(String.format("INR %.2f",cart.getTotalPrice()));
+        binding.subtotal.setText(String.format("PKR %.2f",cart.getTotalPrice()));
 
         totalPrice = (cart.getTotalPrice().doubleValue() * tax / 100) + cart.getTotalPrice().doubleValue();
-        binding.total.setText("INR " + totalPrice);
+        binding.total.setText("PKR " + totalPrice);
 
         binding.checkoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
